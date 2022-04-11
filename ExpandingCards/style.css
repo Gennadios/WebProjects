@@ -25,14 +25,14 @@ body {
 }
 
 .card {
-    background-size: auto;
+    background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
-    flex: 0.5;
+    flex: 1;
     margin: 10px;
     position: relative;
     transition: flex 1s ease-in;
@@ -48,7 +48,6 @@ body {
 }
 
 .card.active {
-    background-size: 100%;
     flex: 5;
 }
 
