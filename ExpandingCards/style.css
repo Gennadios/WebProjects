@@ -14,3 +14,45 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+.main-header {
+    color: #555;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.card {
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 1s ease-in;
+}
+
+.card h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.card.active {
+    background-size: 100%;
+    flex: 5;
+}
+
+.card.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
